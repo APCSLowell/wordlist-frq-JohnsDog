@@ -22,7 +22,12 @@ public class WordList
 
   public void removeWordsOfLength(int len)
   {
-    /* to be implemented in part (b) */
-
+    int i = myList.size();
+      while(i > 0){
+        if(myList.get(i).size() == len){
+            myList.remove(i);
+        }
+        i --;
+      }
   }
 }
